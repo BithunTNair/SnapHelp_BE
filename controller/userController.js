@@ -10,4 +10,8 @@ const serviceList = async (req, res) => {
     }
 };
 
+const bookService= (req,res)=>{
+
+}
+
 module.exports = { serviceList }

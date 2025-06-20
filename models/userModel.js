@@ -38,6 +38,10 @@ const userSchema = new mongoose.Schema({
             type: String,
             enum: ['pending', 'approved','rejected'],
             default: 'pending'
+        },
+        assignedService:{
+            type:Boolean,
+            deafult:false
         }
     },
     createdOn: {
