@@ -9,7 +9,8 @@ DB();
 const PORT = process.env.PORT;
 const authRouter = require('./routes/auth');
 const adminRouter= require('./routes/admin');
-const userRouter = require('./routes/users')
+const userRouter = require('./routes/users');
+const providerRouter= require('./routes/provider')
 
 app.use(express.json());
 app.use(cors({
@@ -18,7 +19,8 @@ app.use(cors({
 
 app.use('/auth', authRouter);
 app.use('/admin',adminRouter)
-app.use('/user', userRouter)
+app.use('/user', userRouter);
+app.use('/provider', providerRouter)
 
 
 
